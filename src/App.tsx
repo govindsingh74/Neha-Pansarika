@@ -6,9 +6,6 @@ import { Home } from './pages/Home';
 import { SignIn } from './pages/auth/SignIn';
 import { SignUp } from './pages/auth/SignUp';
 import { ForgotPassword } from './pages/auth/ForgotPassword';
-import { SignIn } from './pages/auth/SignIn';
-import { SignUp } from './pages/auth/SignUp';
-import { ForgotPassword } from './pages/auth/ForgotPassword';
 import { CartProvider } from './context/CartContext';
 
 function App() {
