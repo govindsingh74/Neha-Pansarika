@@ -36,7 +36,7 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 ml-8">
+          <nav className="hidden md:flex items-center space-x-8 ml-12">
             <a href="#" className="text-white hover:text-green-100 transition-colors text-sm font-medium">
               Home
             </a>
@@ -84,6 +84,13 @@ export const Header: React.FC = () => {
 
               {isUserMenuOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50">
+                  <a href="/auth/signin" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Sign In
+                  </a>
+                  <a href="/auth/signup" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                    Sign Up
+                  </a>
+                  <hr className="my-2" />
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                     Profile
                   </a>
