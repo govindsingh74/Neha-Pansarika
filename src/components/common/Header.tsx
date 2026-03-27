@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-3">
               <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
                 <span className="text-green-600 font-bold text-lg">P</span>
               </div>
@@ -36,7 +36,7 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 ml-8">
             <a href="#" className="text-white hover:text-green-100 transition-colors text-sm font-medium">
               Home
             </a>
