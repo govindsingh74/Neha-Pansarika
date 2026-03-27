@@ -19,31 +19,20 @@ function App() {
           <Route path="/auth/forgot-password" element={<ForgotPassword />} />
           
           {/* Main App Routes - With Header/Footer */}
-          <Route path="/*" element={
-            <div className="min-h-screen bg-white">
-              <Header />
-              <main>
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                </Routes>
-              </main>
-              <Footer />
-            </div>
-          } />
-        </Routes>
-      </CartProvider>
-    </Router>
-          <Route path="/*" element={
-            <div className="min-h-screen bg-white">
-              <Header />
-              <main>
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                </Routes>
-              </main>
-              <Footer />
-            </div>
-          } />
+          <Route
+            path="/*"
+            element={
+              <div className="min-h-screen bg-white">
+                <Header />
+                <main>
+                  <Routes>
+                    <Route path="/" element={<Home />} />
+                  </Routes>
+                </main>
+                <Footer />
+              </div>
+            }
+          />
         </Routes>
       </CartProvider>
     </Router>
