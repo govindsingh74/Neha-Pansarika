@@ -40,7 +40,6 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2">
               {[
                 'About Us',
-                'Contact Us',
                 'Career',
                 'Press',
                 'Blog',
@@ -52,27 +51,43 @@ export const Footer: React.FC = () => {
                   </a>
                 </li>
               ))}
+              <li>
+                <a href="/support/contact" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Contact Us
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Categories */}
+          {/* Help & Support */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Categories</h3>
+            <h3 className="text-lg font-semibold mb-4">Help & Support</h3>
             <ul className="space-y-2">
-              {[
-                'Fruits & Vegetables',
-                'Dairy & Eggs',
-                'Meat & Seafood',
-                'Bakery',
-                'Baby Food',
-                'Health Food'
-              ].map((category) => (
-                <li key={category}>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
-                    {category}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="/support/track-order" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Track Order
+                </a>
+              </li>
+              <li>
+                <a href="/support/shipping" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Shipping Details
+                </a>
+              </li>
+              <li>
+                <a href="/support/cancel-return" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Cancel/Return Order
+                </a>
+              </li>
+              <li>
+                <a href="/support/refund-tracking" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Refund Tracking
+                </a>
+              </li>
+              <li>
+                <a href="/support/raise-ticket" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Raise Ticket
+                </a>
+              </li>
             </ul>
           </div>
 
